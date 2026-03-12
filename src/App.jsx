@@ -6,13 +6,28 @@ import SymposiumBackground from './components/SymposiumBackground';
 import Home from './pages/Home';
 import TechnicalEvents from './pages/TechnicalEvents';
 import NonTechnicalEvents from './pages/NonTechnicalEvents';
-import './styles/main.css';
+
+// Styling
+import './styles/globals.css';
+import './styles/animations.css';
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if (!hash) {
+      window.scrollTo(0, 0);
+    } else {
+      setTimeout(() => {
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 0);
+    }
+  }, [pathname, hash]);
+
   return null;
 }
 
@@ -22,14 +37,15 @@ function App() {
       const elements = document.querySelectorAll('.reveal');
       elements.forEach(el => {
         const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 50) {
+        if (top < window.innerHeight - 80) {
           el.classList.add('active');
         }
       });
     };
 
     window.addEventListener('scroll', reveal);
-    setTimeout(reveal, 500);
+    // Trigger once on load
+    setTimeout(reveal, 800);
 
     return () => window.removeEventListener('scroll', reveal);
   }, []);

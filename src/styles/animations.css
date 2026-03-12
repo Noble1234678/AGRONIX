@@ -1,4 +1,49 @@
-/* Dark Theme Animations */
+/* Premium Symposium Animations */
+
+/* Sun Rise Animation for Navbar */
+@keyframes sunRise {
+    0% {
+        transform: translateY(100%) scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Tractor Path Animation */
+@keyframes tractorMove {
+    0% {
+        left: 0;
+        transform: scaleX(1);
+    }
+
+    50% {
+        left: 100%;
+        transform: scaleX(1);
+    }
+
+    51% {
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes pathDraw {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
 
 /* Text Warp Animation */
 @keyframes textWarp {
@@ -8,18 +53,13 @@
     }
 
     25% {
-        transform: scale(1.02) skewX(1deg);
-        filter: blur(1px);
+        transform: scale(1.02) skewX(0.5deg);
+        filter: blur(0.5px);
     }
 
     50% {
-        transform: scale(1) skewX(-1deg);
+        transform: scale(1) skewX(-0.5deg);
         filter: blur(0);
-    }
-
-    75% {
-        transform: scale(1.02) skewX(0.5deg);
-        filter: blur(1px);
     }
 
     100% {
@@ -29,7 +69,7 @@
 }
 
 .animate-warp {
-    animation: textWarp 5s ease-in-out infinite;
+    animation: textWarp 6s ease-in-out infinite;
 }
 
 /* Background Parallax Motion */
@@ -38,12 +78,8 @@
         transform: scale(1.1) translate(0, 0);
     }
 
-    33% {
-        transform: scale(1.15) translate(-1%, 0.5%);
-    }
-
-    66% {
-        transform: scale(1.1) translate(1%, -0.5%);
+    50% {
+        transform: scale(1.2) translate(-1%, 0.5%);
     }
 
     100% {
@@ -51,9 +87,154 @@
     }
 }
 
+/* Background image responsiveness across all devices */
 .parallax-bg {
-    animation: bgMotion 25s ease-in-out infinite;
+    animation: bgMotion 45s ease-in-out infinite;
     will-change: transform;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Base Responsive Fixes */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 4rem 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Ensure background images don't shift layout on mobile */
+    .hero,
+    .section {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .grid-2,
+    .grid-3 {
+        gap: 1.5rem;
+    }
+}
+
+
+/* Event Card Advanced Motion */
+.event-card-premium {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.event-card-premium::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, var(--primary-green), transparent, var(--primary-green)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.event-card-premium:hover::after {
+    opacity: 1;
+    animation: borderRotate 4s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.moving-line {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, var(--primary-green), transparent);
+    opacity: 0.3;
+    animation: lineFlow 8s linear infinite;
+}
+
+@keyframes lineFlow {
+    0% {
+        transform: translateY(-100px) rotate(15deg);
+        left: -100%;
+    }
+
+    100% {
+        transform: translateY(500px) rotate(15deg);
+        left: 100%;
+    }
+}
+
+.card-content-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(74, 222, 128, 0.1) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.event-card-premium:hover .card-content-glow {
+    opacity: 1;
+}
+
+
+.event-card:hover {
+    transform: translateY(-10px) rotateX(2deg) rotateY(2deg);
+    border-color: var(--primary-green);
+    box-shadow: 0 20px 50px rgba(74, 222, 128, 0.2);
+}
+
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(74, 222, 128, 0.1), transparent);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.event-card:hover::before {
+    left: 100%;
+}
+
+.event-card img {
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.event-card:hover img {
+    transform: scale(1.1) rotate(1deg);
 }
 
 /* Footer Animation */
@@ -74,9 +255,10 @@
 .footer-animate {
     background: linear-gradient(-45deg, #050f0a, #0a1f14, #0d2818, #14532d);
     background-size: 400% 400%;
-    animation: footerGradient 15s ease infinite;
+    animation: footerGradient 20s ease infinite;
 }
 
+/* Floating Leaves */
 @keyframes floatLeaf {
     0% {
         transform: translate(0, -10vh) rotate(0deg);
@@ -92,7 +274,7 @@
     }
 
     100% {
-        transform: translate(100px, 110vh) rotate(720deg);
+        transform: translate(150px, 110vh) rotate(720deg);
         opacity: 0;
     }
 }
@@ -104,22 +286,20 @@
     pointer-events: none;
 }
 
-@keyframes kenBurns {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+/* Scroll Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.animate-ken-burns {
-    animation: kenBurns 30s ease-in-out infinite;
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-fade {
+    animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes fadeIn {
@@ -134,29 +314,14 @@
     }
 }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.animate-fade {
-    animation: fadeIn 1s ease-out forwards;
-}
-
 .delay-1 {
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 
 .delay-2 {
-    animation-delay: 0.6s;
+    animation-delay: 0.4s;
 }
 
 .delay-3 {
-    animation-delay: 0.9s;
+    animation-delay: 0.6s;
 }

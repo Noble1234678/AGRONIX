@@ -1,52 +1,76 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Music, PlayCircle, Trophy, Video, Camera, ArrowLeft, Gamepad2, Stars } from 'lucide-react';
+import { Music, Video, Camera, ArrowLeft, Gamepad2, Stars } from 'lucide-react';
+import EventCard from '../components/EventCard';
+
 import bgEvents from '../assets/bg3.jpg';
-import nonTechPoster from '../assets/non_tech_poster.png';
 
 const NonTechnicalEvents = () => {
     const events = [
-        { title: "Dancing (Solo / Group)", icon: <Stars size={32} />, desc: "Groove to the rhythm and set the stage on fire." },
-        { title: "Start Music", icon: <Music size={32} />, desc: "Recognize the beats and win the musical clash." },
-        { title: "E-Sports (Free Fire)", icon: <Gamepad2 size={32} />, desc: "Clash in the virtual arena for the ultimate booyah." },
-        { title: "Reels Making", icon: <Video size={32} />, desc: "Unleash your creativity in the world of short-form video." },
-        { title: "Bioscope", icon: <Camera size={32} />, desc: "Capture the essence through your photography lens." }
+        {
+            title: "Dancing (Solo / Group)",
+            icon: <Stars size={24} />,
+            desc: "The Dancing event gives participants an opportunity to showcase their talent, creativity, and passion for dance. Participants can perform individually or as a group in any dance style. This event adds energy and entertainment to the symposium while encouraging artistic expression.",
+            poster: "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&q=80&w=1200",
+            color: "#fbbf24"
+        },
+        {
+            title: "Start Music",
+            icon: <Music size={24} />,
+            desc: "Start Music is a fun musical event where participants showcase their singing or musical talent. Individuals or teams can perform songs or musical pieces in their preferred style. The event celebrates creativity, rhythm, and musical expression.",
+            poster: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=1200",
+            color: "#f59e0b"
+        },
+        {
+            title: "E-Sports (Free Fire)",
+            icon: <Gamepad2 size={24} />,
+            desc: "The E-Sports event features the popular mobile game Garena Free Fire. Participants will compete in exciting matches that test their strategy, teamwork, and gaming skills. The event provides a thrilling competitive gaming experience for players and spectators.",
+            poster: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1200",
+            color: "#d97706"
+        },
+        {
+            title: "Reels Making",
+            icon: <Video size={24} />,
+            desc: "The Reels Making event challenges participants to create short, creative, and engaging video reels. Participants can showcase storytelling, editing skills, humor, or creative ideas through short videos. The best reels will be judged based on creativity, originality, and presentation.",
+            poster: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&q=80&w=1200",
+            color: "#fbbf24"
+        },
+        {
+            title: "Bioscope",
+            icon: <Camera size={24} />,
+            desc: "Bioscope is an entertaining event where participants present short films, visual stories, or creative video content. Teams can showcase their storytelling skills through creative videos, documentaries, or mini films. The event highlights creativity, imagination, and visual communication.",
+            poster: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=1200",
+            color: "#fde68a"
+        }
     ];
 
     return (
         <div style={{ minHeight: '100vh', background: 'var(--dark-bg)', position: 'relative', overflow: 'hidden' }}>
+            {/* Background Lines Animation */}
+            <div className="moving-line" style={{ top: '30%', opacity: 0.1, background: 'linear-gradient(90deg, transparent, #fbbf24, transparent)' }}></div>
+            <div className="moving-line" style={{ top: '70%', opacity: 0.1, background: 'linear-gradient(90deg, transparent, #fbbf24, transparent)', animationDelay: '-4s' }}></div>
+
             <div style={{ position: 'absolute', inset: 0, opacity: 0.1, zIndex: 0 }}>
                 <img src={bgEvents} alt="Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
 
-            <div className="container" style={{ paddingTop: '120px', paddingBottom: '80px' }}>
-                <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#fbbf24', textDecoration: 'none', fontWeight: 700, marginBottom: '3rem' }}>
-                    <ArrowLeft size={18} /> Back to Home
+            <div className="container" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+                <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#fbbf24', textDecoration: 'none', fontWeight: 800, marginBottom: '3rem', fontSize: '0.9rem', position: 'relative', zIndex: 10 }}>
+                    <ArrowLeft size={18} /> BACK TO FIELD
                 </Link>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '4rem', alignItems: 'center', marginBottom: '5rem' }}>
-                    <div className="reveal">
-                        <span className="badge" style={{ color: '#fbbf24', background: 'rgba(251, 191, 36, 0.1)' }}>Fun & Talent</span>
-                        <h2 style={{ fontSize: '3.5rem', marginTop: '1rem', color: '#fbbf24' }}>Non-Technical Events</h2>
-                        <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '1rem 0' }}>
-                            Unleash your artistic flair and competitive spirit. From music and dance to gaming and filmmaking,
-                            showcase your talents beyond the technical world.
-                        </p>
-                    </div>
-                    <div className="reveal" style={{ borderRadius: '20px', overflow: 'hidden', border: '1px solid rgba(251, 191, 36, 0.2)', height: '300px' }}>
-                        <img src={nonTechPoster} alt="Non-Technical Poster" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                    </div>
+                <div className="reveal active" style={{ marginBottom: '5rem', position: 'relative', zIndex: 10 }}>
+                    <span className="badge" style={{ color: '#fbbf24', background: 'rgba(251, 191, 36, 0.1)' }}>Talent Unleashed</span>
+                    <h2 style={{ margin: '1rem 0', color: '#fbbf24' }}>Non-Technical Arena</h2>
+                    <p className="desc-lg" style={{ maxWidth: '800px', color: 'var(--text-dim)' }}>
+                        Step out of the lab and onto the stage. The Non-Technical category celebrates art, rhythm,
+                        and digital creativity.
+                    </p>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                <div className="events-list">
                     {events.map((event, i) => (
-                        <div key={i} className="glass reveal" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
-                            <div style={{ color: '#fbbf24', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-                                {event.icon}
-                            </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{event.title}</h3>
-                            <p style={{ color: 'var(--text-muted)' }}>{event.desc}</p>
-                        </div>
+                        <EventCard key={i} {...event} />
                     ))}
                 </div>
             </div>

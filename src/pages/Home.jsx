@@ -9,8 +9,7 @@ import bgAbout from '../assets/bg2.jpg';
 import bgEvents from '../assets/bg3.jpg';
 import bgRegister from '../assets/bg4.jpg';
 import bgContact from '../assets/bg5.png';
-import techPoster from '../assets/tech_poster.png';
-import nonTechPoster from '../assets/non_tech_poster.png';
+
 
 const Home = () => {
     return (
@@ -23,17 +22,17 @@ const Home = () => {
                 </div>
 
                 <div className="container" style={{ textAlign: 'center' }}>
-                    <span className="badge animate-fade">National Level Symposium</span>
-                    <h1 className="animate-fade delay-1 animate-warp" style={{ fontSize: 'clamp(2.5rem, 8vw, 5.5rem)', margin: '1rem 0' }}>
+                    <span className="badge animate-fade">Future of Farming</span>
+                    <h1 className="animate-fade delay-1 animate-warp" style={{ margin: '1.5rem 0' }}>
                         AGRONIX <span className="grad-text">2K26</span>
                     </h1>
-                    <p className="animate-fade delay-2" style={{ fontSize: '1.2rem', color: 'var(--text-dim)', maxWidth: '700px', margin: '0 auto 2.5rem' }}>
-                        Exploring Innovation in Agriculture Engineering <br />
+                    <p className="animate-fade delay-2 desc-lg" style={{ color: 'var(--text-dim)', maxWidth: '750px', margin: '0 auto 2.5rem' }}>
+                        Harvesting Innovation & Sustainable Technology <br />
                         <strong>Suguna College of Engineering</strong>
                     </p>
                     <div className="animate-fade delay-3" style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-                        <a href="#events" className="btn btn-primary" style={{ background: 'var(--primary-green)', color: 'var(--dark-bg)', padding: '1rem 2.5rem', borderRadius: '50px', fontWeight: 800, textDecoration: 'none' }}>Explore Events</a>
-                        <a href="#register" className="btn" style={{ border: '1px solid var(--primary-green)', color: 'var(--primary-green)', padding: '1rem 2.5rem', borderRadius: '50px', fontWeight: 800, textDecoration: 'none' }}>Register Now</a>
+                        <a href="#events" className="btn btn-primary" style={{ background: 'var(--primary-green)', color: 'var(--dark-bg)', padding: '0.8rem 2.5rem', borderRadius: '12px', fontWeight: 800, textDecoration: 'none', fontSize: '0.9rem' }}>DISCOVER EVENTS</a>
+                        <a href="#register" className="btn" style={{ border: '2px solid var(--primary-green)', color: 'var(--primary-green)', padding: '0.8rem 2.5rem', borderRadius: '12px', fontWeight: 800, textDecoration: 'none', fontSize: '0.9rem' }}>GET REGISTERED</a>
                     </div>
                 </div>
             </section>
@@ -44,34 +43,29 @@ const Home = () => {
                     <img src={bgAbout} alt="About Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '4rem', alignItems: 'center' }}>
+                    <div className="grid-2" style={{ alignItems: 'center' }}>
                         <div className="reveal">
-                            <span className="badge">About the Event</span>
-                            <h2 className="grad-text" style={{ fontSize: '3rem', margin: '1rem 0' }}>Symposium Description</h2>
-                            <p style={{ color: 'var(--text-dim)', fontSize: '1.1rem', marginBottom: '2rem' }}>
-                                AGRONIX 2K26 is a premier platform designed to ignite the spark of innovation among budding agriculture engineers.
-                                We bring together researchers, enthusiasts, and industry experts to discuss sustainable technologies, AI integration,
-                                and revolutionary farming practices.
+                            <span className="badge">Our Vision</span>
+                            <h2 className="grad-text" style={{ margin: '1rem 0' }}>Farming the Future</h2>
+                            <p className="desc-lg" style={{ color: 'var(--text-dim)', marginBottom: '2rem' }}>
+                                AGRONIX 2K26 is where traditional farming meets modern engineering.
+                                We explore AI crop monitoring, smart irrigation, and robotic harvesting
+                                to build a sustainable world.
                             </p>
-                            <p style={{ color: 'var(--text-dim)', fontSize: '1.1rem', marginBottom: '3rem' }}>
-                                This symposium hosts a series of technical and non-technical challenges carefully curated to test your skills,
-                                creativity, and knowledge in the diverse fields of modern agriculture.
-                            </p>
-
                             <div style={{ display: 'flex', gap: '2rem' }}>
                                 <div>
-                                    <h4 style={{ color: 'var(--primary-green)', fontSize: '2rem' }}>500+</h4>
-                                    <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>Students Expected</p>
+                                    <h4 style={{ color: 'var(--primary-green)', fontSize: '2rem' }}>200+</h4>
+                                    <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', fontWeight: 700 }}>EXPECTING PARTICIPANTS</p>
                                 </div>
-                                <div style={{ width: '2px', background: 'var(--glass-border)' }}></div>
+                                <div style={{ width: '1px', background: 'var(--glass-border)' }}></div>
                                 <div>
-                                    <h4 style={{ color: 'var(--primary-green)', fontSize: '2rem' }}>20+</h4>
-                                    <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>Events Planned</p>
+                                    <h4 style={{ color: 'var(--primary-green)', fontSize: '2rem' }}>10+</h4>
+                                    <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', fontWeight: 700 }}>INSTITUTIONS</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="glass reveal" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <div className="glass reveal" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem' }}>
                             <PlantGrowth />
                         </div>
                     </div>
@@ -84,53 +78,33 @@ const Home = () => {
                     <img src={bgEvents} alt="Events Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="container">
-                    <div style={{ textAlign: 'center', marginBottom: '4rem' }} className="reveal">
-                        <span className="badge">The Main Stage</span>
-                        <h2 style={{ fontSize: '3rem', margin: '1rem 0' }}>Our Major Categories</h2>
-                        <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>Select a category to view the list of events and competitions.</p>
+                    <div style={{ textAlign: 'center', marginBottom: '3rem' }} className="reveal">
+                        <span className="badge">Main Arena</span>
+                        <h2 style={{ margin: '1rem 0' }}>Symposium Tracks</h2>
+                        <p className="desc-lg" style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>Choose your path and showcase your engineering prowess.</p>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '3rem' }}>
-                        {/* Technical Poster */}
-                        <Link to="/technical" className="reveal" style={{ textDecoration: 'none' }}>
-                            <div className="glass" style={{ padding: '1rem', overflow: 'hidden', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                                <div style={{ height: '400px', overflow: 'hidden', borderRadius: '15px', position: 'relative' }}>
-                                    <img src={techPoster} alt="Technical Events Poster" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)' }}></div>
-                                    <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem' }}>
-                                        <div style={{ background: 'var(--primary-green)', color: 'var(--dark-bg)', padding: '0.5rem 1rem', borderRadius: '10px', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontWeight: 700 }}>
-                                            <Monitor size={18} /> Technical
-                                        </div>
-                                    </div>
-                                </div>
-                                <div style={{ padding: '1.5rem', flex: 1 }}>
-                                    <h3 style={{ color: 'var(--text-main)', marginBottom: '0.5rem', fontSize: '1.5rem' }}>Technical Events</h3>
-                                    <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Paper presentation, Poster presentation, and Technical talks.</p>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-green)', fontWeight: 700 }}>
-                                        View Details <ArrowRight size={18} />
-                                    </div>
+                    <div className="grid-2" style={{ gap: '2rem' }}>
+                        {/* Technical Card */}
+                        <Link to="/technical" className="reveal event-card" style={{ textDecoration: 'none', padding: '1rem' }}>
+                            <div style={{ height: '350px', borderRadius: '15px', overflow: 'hidden', position: 'relative' }}>
+                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" alt="Technical" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(5,15,10,0.9), transparent)' }}></div>
+                                <div style={{ position: 'absolute', bottom: '1.2rem', left: '1.2rem' }}>
+                                    <h3 style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '0.1rem' }}>Technical Events</h3>
+                                    <p style={{ color: 'var(--primary-green)', fontWeight: 800, fontSize: '0.75rem', letterSpacing: '1px' }}>CORE ENGINEERING</p>
                                 </div>
                             </div>
                         </Link>
 
-                        {/* Non-Technical Poster */}
-                        <Link to="/non-technical" className="reveal" style={{ textDecoration: 'none' }}>
-                            <div className="glass" style={{ padding: '1rem', overflow: 'hidden', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                                <div style={{ height: '400px', overflow: 'hidden', borderRadius: '15px', position: 'relative' }}>
-                                    <img src={nonTechPoster} alt="Non-Technical Events Poster" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)' }}></div>
-                                    <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem' }}>
-                                        <div style={{ background: '#fbbf24', color: 'var(--dark-bg)', padding: '0.5rem 1rem', borderRadius: '10px', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontWeight: 700 }}>
-                                            <Music size={18} /> Non-Technical
-                                        </div>
-                                    </div>
-                                </div>
-                                <div style={{ padding: '1.5rem', flex: 1 }}>
-                                    <h3 style={{ color: 'var(--text-main)', marginBottom: '0.5rem', fontSize: '1.5rem' }}>Non-Technical</h3>
-                                    <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>Dance, Music, E-Sports, Reels, and Bioscope.</p>
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#fbbf24', fontWeight: 700 }}>
-                                        View Details <ArrowRight size={18} />
-                                    </div>
+                        {/* Non-Technical Card */}
+                        <Link to="/non-technical" className="reveal event-card" style={{ textDecoration: 'none', padding: '1rem' }}>
+                            <div style={{ height: '350px', borderRadius: '15px', overflow: 'hidden', position: 'relative' }}>
+                                <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=1200" alt="Non-Technical" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(5,15,10,0.9), transparent)' }}></div>
+                                <div style={{ position: 'absolute', bottom: '1.2rem', left: '1.2rem' }}>
+                                    <h3 style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '0.1rem' }}>Non-Technical</h3>
+                                    <p style={{ color: '#fbbf24', fontWeight: 800, fontSize: '0.75rem', letterSpacing: '1px' }}>CREATIVE TALENT</p>
                                 </div>
                             </div>
                         </Link>
@@ -144,34 +118,31 @@ const Home = () => {
                     <img src={bgRegister} alt="Register Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="container">
-                    <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }} className="reveal">
-                        <span className="badge">Registration Details</span>
-                        <h2 className="grad-text" style={{ fontSize: '3rem', margin: '1rem 0' }}>Join the Innovation</h2>
-                        <p style={{ color: 'var(--text-dim)', fontSize: '1.1rem', marginBottom: '3rem' }}>
-                            Participation in AGRONIX 2K26 offers students a chance to network with peers, showcase their projects, and win exciting prizes.
-                            Registration covers access to all events, symposium kits, lunch, and participation certificates for all registered candidates.
-                            <br /><br />
-                            <strong>Registration Closing: March 30, 2026.</strong>
+                    <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }} className="reveal">
+                        <span className="badge">Registration Hub</span>
+                        <h2 className="grad-text" style={{ margin: '1rem 0' }}>Seed Your Success</h2>
+                        <p className="desc-lg" style={{ color: 'var(--text-dim)', marginBottom: '3rem' }}>
+                            Ready to join the agricultural revolution? Group registrations and
+                            individual entries are now open for all technical and non-technical tracks.
                         </p>
 
-                        <div className="glass" style={{ padding: '3rem', border: '1px solid var(--primary-green)' }}>
-                            <h3 style={{ marginBottom: '2rem' }}>Symposium Registration</h3>
-                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', textAlign: 'left', marginBottom: '3rem' }}>
+                        <div className="glass" style={{ border: '1px solid var(--primary-green)', padding: '3rem 2rem' }}>
+                            <div className="grid-3" style={{ textAlign: 'left', marginBottom: '3rem' }}>
                                 <div>
-                                    <label style={{ display: 'block', color: 'var(--text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem' }}>Event Dates</label>
-                                    <p style={{ fontWeight: 700 }}>June 15 - 18, 2026</p>
+                                    <label style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Schedule</label>
+                                    <h4 style={{ fontSize: '1.4rem' }}>APIRL 8, 2026</h4>
                                 </div>
                                 <div>
-                                    <label style={{ display: 'block', color: 'var(--text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem' }}>Registration Fee</label>
-                                    <p style={{ fontWeight: 700 }}>₹250 per Head</p>
+                                    <label style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Entry Fee</label>
+                                    <h4 style={{ fontSize: '1.4rem' }}>₹200 / Participant</h4>
                                 </div>
                                 <div>
-                                    <label style={{ display: 'block', color: 'var(--text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem' }}>Overall Prize Pool</label>
-                                    <p style={{ fontWeight: 700 }}>₹50,000+</p>
+                                    <label style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Prizes</label>
+                                    <h4 style={{ fontSize: '1.4rem' }}>Win Exciting Prizes</h4>
                                 </div>
                             </div>
-                            <button className="btn btn-primary" style={{ background: 'var(--primary-green)', color: 'var(--dark-bg)', padding: '1rem 3.5rem', borderRadius: '50px', fontWeight: 800, border: 'none', cursor: 'pointer', fontSize: '1rem' }}>
-                                Register for AGRONIX
+                            <button className="btn btn-primary" style={{ background: 'var(--primary-green)', color: 'var(--dark-bg)', padding: '1rem 4rem', borderRadius: '12px', fontWeight: 800, border: 'none', cursor: 'pointer', fontSize: '1rem' }}>
+                                REGISTER NOW
                             </button>
                         </div>
                     </div>
@@ -184,33 +155,32 @@ const Home = () => {
                     <img src={bgContact} alt="Contact Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="container">
-                    <div style={{ textAlign: 'center', marginBottom: '4rem' }} className="reveal">
-                        <span className="badge">Get in Touch</span>
-                        <h2 style={{ fontSize: '3rem', margin: '1rem 0' }}>Contact Us</h2>
-                        <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>If you have any questions, feel free to contact our coordinators.</p>
+                    <div className="reveal" style={{ textAlign: 'center', marginBottom: '4rem' }}>
+                        <span className="badge">Direct Help</span>
+                        <h2 style={{ margin: '1rem 0' }}>Contact Our Team</h2>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-                        <div className="glass reveal" style={{ textAlign: 'center' }}>
+                    <div className="grid-3">
+                        <div className="glass reveal" style={{ textAlign: 'center', padding: '2rem' }}>
                             <div style={{ background: 'rgba(74, 222, 128, 0.1)', width: '60px', height: '60px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', color: 'var(--primary-green)' }}>
-                                <Mail size={28} />
+                                <Mail size={24} />
                             </div>
-                            <h4 style={{ marginBottom: '0.5rem' }}>Email Us</h4>
-                            <p style={{ color: 'var(--text-dim)' }}>info@agronix2k26.org</p>
+                            <h4 style={{ marginBottom: '0.5rem' }}>Inquiries</h4>
+                            <p style={{ fontSize: '0.9rem' }}>info@agronix2k26.org</p>
                         </div>
-                        <div className="glass reveal" style={{ textAlign: 'center' }}>
+                        <div className="glass reveal" style={{ textAlign: 'center', padding: '2rem' }}>
                             <div style={{ background: 'rgba(74, 222, 128, 0.1)', width: '60px', height: '60px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', color: 'var(--primary-green)' }}>
-                                <Phone size={28} />
+                                <Phone size={24} />
                             </div>
-                            <h4 style={{ marginBottom: '0.5rem' }}>Call Us</h4>
-                            <p style={{ color: 'var(--text-dim)' }}>+91 98765 43210</p>
+                            <h4 style={{ marginBottom: '0.5rem' }}>Helpline</h4>
+                            <p style={{ fontSize: '0.9rem' }}>+91 98765 43210</p>
                         </div>
-                        <div className="glass reveal" style={{ textAlign: 'center' }}>
+                        <div className="glass reveal" style={{ textAlign: 'center', padding: '2rem' }}>
                             <div style={{ background: 'rgba(74, 222, 128, 0.1)', width: '60px', height: '60px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', color: 'var(--primary-green)' }}>
-                                <MapPin size={28} />
+                                <MapPin size={24} />
                             </div>
-                            <h4 style={{ marginBottom: '0.5rem' }}>Visit Us</h4>
-                            <p style={{ color: 'var(--text-dim)' }}>SCE, Coimbatore, TN</p>
+                            <h4 style={{ marginBottom: '0.5rem' }}>Location</h4>
+                            <p style={{ fontSize: '0.9rem' }}>SCE, Coimbatore, TN</p>
                         </div>
                     </div>
                 </div>

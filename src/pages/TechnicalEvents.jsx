@@ -4,6 +4,9 @@ import { Monitor, BookOpen, Mic, ArrowLeft } from 'lucide-react';
 import EventCard from '../components/EventCard';
 
 import bgEvents from '../assets/bg3.jpg';
+import posterPresentation from '../assets/posters/poster_presentation.png';
+import paperPresentation from '../assets/posters/paper_presentation.png';
+import techTalk from '../assets/posters/tech_talk.png';
 
 const TechnicalEvents = () => {
     const events = [
@@ -11,21 +14,21 @@ const TechnicalEvents = () => {
             title: "Poster Presentation",
             icon: <Monitor size={24} />,
             desc: "The Poster Presentation event allows participants to present innovative ideas, research findings, or technical solutions related to agriculture and technology through creative posters. Teams will visually explain their concepts, methodology, and outcomes to judges and participants. The event encourages creativity, research thinking, and effective communication of technical knowledge",
-            poster: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200",
+            poster: posterPresentation,
             color: "#4ade80"
         },
         {
             title: "Paper Presentation",
             icon: <BookOpen size={24} />,
             desc: "The Paper Presentation event provides a platform for students to present research papers on emerging topics in agriculture, technology, and innovation. Participants will explain their research, findings, and solutions to real-world agricultural challenges. The event helps students develop research skills, analytical thinking, and professional presentation abilities.",
-            poster: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
+            poster: paperPresentation,
             color: "#22c55e"
         },
         {
             title: "Tech Talk",
             icon: <Mic size={24} />,
             desc: "Tech Talk is an interactive session where participants share knowledge, ideas, or innovations related to modern technology and agriculture. Students can present emerging technologies, future trends, or innovative solutions in a short and engaging talk. This event encourages knowledge sharing, confidence, and communication skills",
-            poster: "https://images.unsplash.com/photo-1558444479-c86e4e65d96c?auto=format&fit=crop&q=80&w=1200",
+            poster: techTalk,
             color: "#86efac"
         }
     ];

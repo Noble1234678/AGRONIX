@@ -15,13 +15,13 @@ const Home = () => {
     return (
         <div>
             {/* 1. HOME SECTION - background.jpg */}
-            <section id="home" className="section hero" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+            <section id="home" className="section hero" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden', width: '100%' }}>
+                <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
                     <img src={backgroundHero} alt="Hero Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     <div className="bg-img-overlay"></div>
                 </div>
 
-                <div className="container" style={{ textAlign: 'center' }}>
+                <div className="container" style={{ textAlign: 'center', width: '100%' }}>
                     <span className="badge animate-fade">Future of Farming</span>
                     <h1 className="animate-fade delay-1 animate-warp" style={{ margin: '1.5rem 0' }}>
                         AGRONIX <span className="grad-text">2K26</span>
@@ -43,7 +43,7 @@ const Home = () => {
                     <img src={bgAbout} alt="About Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="container">
-                    <div className="grid-2" style={{ alignItems: 'center' }}>
+                    <div className="grid-2" style={{ alignItems: 'center', minHeight: '60vh' }}>
                         <div className="reveal">
                             <span className="badge">Our Vision</span>
                             <h2 className="grad-text" style={{ margin: '1rem 0' }}>Farming the Future</h2>
@@ -127,7 +127,7 @@ const Home = () => {
                         </p>
 
                         <div className="glass" style={{ border: '1px solid var(--primary-green)', padding: '3rem 2rem' }}>
-                            <div className="grid-3" style={{ textAlign: 'left', marginBottom: '3rem' }}>
+                            <div className="grid-3" style={{ textAlign: 'left', marginBottom: '3rem', width: '100%' }}>
                                 <div>
                                     <label style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Schedule</label>
                                     <h4 style={{ fontSize: '1.4rem' }}>APIRL 8, 2026</h4>

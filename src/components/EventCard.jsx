@@ -100,8 +100,8 @@ const EventCard = ({ title, icon, desc, poster, color = '#4ade80' }) => {
 
                 .card-grid {
                     display: grid;
-                    grid-template-columns: 1.2fr 1.8fr;
-                    height: 400px;
+                    grid-template-columns: clamp(300px, 40%, 450px) 1fr;
+                    min-height: 450px;
                 }
 
                 .card-image-panel {

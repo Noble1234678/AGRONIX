@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container">
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
                     <Leaf size={28} color="var(--primary-green)" />
-                    <span style={{ fontSize: '1.5rem', fontWeight: 900, color: '#fff', letterSpacing: '-0.5px' }}>AGRONIX 2K26</span>
+                    <span style={{ fontSize: '1.5rem', fontWeight: 900, color: '#fff', letterSpacing: '-0.5px' }}>ZENZORA 2K26</span>
                 </div>
 
                 <div className="footer-links" style={{ display: 'flex', justifyContent: 'center', gap: '2.5rem', marginBottom: '2rem' }}>

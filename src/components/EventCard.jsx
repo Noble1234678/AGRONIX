@@ -26,7 +26,7 @@ const EventCard = ({ title, icon, desc, poster, color = '#4ade80' }) => {
     };
 
     const handleRegister = () => {
-        window.location.href = '/#register';
+        window.open('https://docs.google.com/forms/d/e/1FAIpQLSeDhRMwjGfE1VF7HsMeHB3ERRvEUVvbJ-oZZdPhjAHNbUt13w/viewform?usp=dialog', '_blank');
     };
 
     return (

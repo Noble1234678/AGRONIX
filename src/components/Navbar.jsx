@@ -105,6 +105,7 @@ const Navbar = () => {
                         <button
                             onClick={() => scrollTo("register")}
                             className="register-btn"
+                            style={{ textDecoration: 'none' }}
                         >
                             Register <ArrowUpRight size={16} />
                         </button>
@@ -138,15 +139,18 @@ const Navbar = () => {
                             </button>
                         ))}
 
-                        <button
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeDhRMwjGfE1VF7HsMeHB3ERRvEUVvbJ-oZZdPhjAHNbUt13w/viewform?usp=dialog"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="mobile-nav-item register-highlight"
-                            onClick={() => scrollTo("register")}
-                            style={{ transitionDelay: `${links.length * 0.1}s` }}
+                            style={{ transitionDelay: `${links.length * 0.1}s`, textDecoration: 'none' }}
+                            onClick={() => setIsOpen(false)}
                         >
                             <span className="item-icon"><Rocket size={24} /></span>
                             <span className="item-text">Register Now</span>
                             <div className="item-arrow"><ArrowUpRight size={20} /></div>
-                        </button>
+                        </a>
                     </div>
 
                     <div className="mobile-menu-footer">

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Monitor, BookOpen, Mic, ArrowLeft } from 'lucide-react';
+import { Monitor, BookOpen, Mic, ArrowLeft, Lightbulb } from 'lucide-react';
 import EventCard from '../components/EventCard';
 
 import bgEvents from '../assets/bg3.jpg';
 import posterPresentation from '../assets/posters/poster_presentation.png';
 import paperPresentation from '../assets/posters/paper_presentation.png';
 import techTalk from '../assets/posters/tech_talk.png';
+import wisdomWar from '../assets/posters/wisdomWar.png'
 
 const TechnicalEvents = () => {
     const events = [
@@ -30,6 +31,13 @@ const TechnicalEvents = () => {
             desc: "Tech Talk is an interactive session where participants share knowledge, ideas, or innovations related to modern technology and agriculture. Students can present emerging technologies, future trends, or innovative solutions in a short and engaging talk. This event encourages knowledge sharing, confidence, and communication skills",
             poster: techTalk,
             color: "#86efac"
+        },
+        {
+            title: "Wisdom War",
+            icon: <Lightbulb size={24} />,
+            desc: "Wisdom War is a technical quiz competition organized by the Agriculture Department to test and enhance students’ knowledge in agricultural science, technology, and innovations. The event encourages participants to explore topics such as crop production, soil science, agricultural engineering, modern farming technologies, and sustainable agriculture while competing in an engaging and challenging quiz format.",
+            poster: wisdomWar,
+            color: "#34d399"
         }
     ];
 

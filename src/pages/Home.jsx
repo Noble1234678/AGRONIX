@@ -143,6 +143,7 @@ const Home = () => {
                                 <div>
                                     <label style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Entry Fee</label>
                                     <h4 style={{ fontSize: '1.4rem' }}>₹200 / Participant</h4>
+                                    <p>Note : Two Events Per Registration </p>
                                 </div>
                                 <div>
                                     <label style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Prizes</label>
@@ -152,6 +153,7 @@ const Home = () => {
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDhRMwjGfE1VF7HsMeHB3ERRvEUVvbJ-oZZdPhjAHNbUt13w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ display: 'inline-block', textDecoration: 'none', background: 'var(--primary-green)', color: 'var(--dark-bg)', padding: '1rem 4rem', borderRadius: '12px', fontWeight: 800, border: 'none', cursor: 'pointer', fontSize: '1rem' }}>
                                 REGISTER NOW
                             </a>
+                            <p>Note : After Registration Send Your Screenshot to the +91 7200347033</p>
                         </div>
                     </div>
                 </div>
@@ -169,26 +171,31 @@ const Home = () => {
                     </div>
 
                     <div className="grid-3">
-                        <div className="glass reveal" style={{ textAlign: 'center', padding: '2rem' }}>
+                        <div className="glass reveal" style={{ textAlign: 'center', padding: '2rem', cursor: 'pointer', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'} onClick={() => window.location.href = 'mailto:zenzora2k26@gmail.com'}>
                             <div style={{ background: 'rgba(74, 222, 128, 0.1)', width: '60px', height: '60px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', color: 'var(--primary-green)' }}>
                                 <Mail size={24} />
                             </div>
                             <h4 style={{ marginBottom: '0.5rem' }}>Inquiries</h4>
-                            <p style={{ fontSize: '0.9rem' }}>zenzora2k26@gmail.com</p>
+                            <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary-green)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-main)'}>zenzora2k26@gmail.com</p>
                         </div>
                         <div className="glass reveal" style={{ textAlign: 'center', padding: '2rem' }}>
                             <div style={{ background: 'rgba(74, 222, 128, 0.1)', width: '60px', height: '60px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', color: 'var(--primary-green)' }}>
                                 <Phone size={24} />
                             </div>
-                            <h4 style={{ marginBottom: '0.5rem' }}>Helpline</h4>
-                            <p style={{ fontSize: '0.9rem' }}>+91 98765 43210</p>
+                            <h4 style={{ marginBottom: '0.5rem' }}>Coordinators</h4>
+                            <a href="tel:+916380325475" style={{ textDecoration: 'none', color: 'var(--text-main)', display: 'block', margin: '0 0 0.3rem 0', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary-green)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-main)'}>
+                                <p style={{ fontSize: '0.9rem', margin: 0 }}>MONISH KUMAR M : +91 6380325475</p>
+                            </a>
+                            <a href="tel:+919043757931" style={{ textDecoration: 'none', color: 'var(--text-main)', display: 'block', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary-green)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-main)'}>
+                                <p style={{ fontSize: '0.9rem', margin: 0 }}>PRAMILA R :  +91 9043757931</p>
+                            </a>
                         </div>
-                        <div className="glass reveal" style={{ textAlign: 'center', padding: '2rem' }}>
+                        <div className="glass reveal" style={{ textAlign: 'center', padding: '2rem', cursor: 'pointer', transition: 'transform 0.3s' }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-5px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'} onClick={() => window.open('https://maps.google.com/?q=Suguna+College+of+Engineering,+Coimbatore', '_blank')}>
                             <div style={{ background: 'rgba(74, 222, 128, 0.1)', width: '60px', height: '60px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', color: 'var(--primary-green)' }}>
                                 <MapPin size={24} />
                             </div>
                             <h4 style={{ marginBottom: '0.5rem' }}>Location</h4>
-                            <p style={{ fontSize: '0.9rem' }}>SCE, Coimbatore, TN</p>
+                            <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary-green)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-main)'}>SCE, Coimbatore, TN</p>
                         </div>
                     </div>
                 </div>

@@ -69,7 +69,7 @@ const Navbar = () => {
                         <div className="logo-icon">
                             <Leaf size={22} />
                         </div>
-                        <span className="logo-text">AGRONIX 2K26</span>
+                        <span className="logo-text">ZENZORA 2K26</span>
                     </Link>
 
                     {/* DESKTOP NAV */}

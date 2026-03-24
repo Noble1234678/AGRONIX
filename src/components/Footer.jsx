@@ -23,12 +23,12 @@ const Footer = () => {
                 </div>
 
                 <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem', marginTop: '1.5rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-                    <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Mail size={16} /> info@agronix2k26.org</span>
+                    <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Mail size={16} />zenzora2k26@gmail.com</span>
                     <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><MapPin size={16} /> Coimbatore, Tamil Nadu</span>
                 </div>
 
                 <div style={{ width: '100px', height: '2px', background: 'linear-gradient(90deg, transparent, var(--primary-green), transparent)', margin: '2rem auto 1.5rem' }}></div>
-                <p style={{ color: 'var(--text-muted)', opacity: 0.6, fontSize: '0.85rem', textAlign: 'center' }}>© 2026 AGRONIX. Powering Knowledge & Innovation.</p>
+                <p style={{ color: 'var(--text-muted)', opacity: 0.6, fontSize: '0.85rem', textAlign: 'center' }}>© 2026 ZENZORA. Powering Knowledge & Innovation.</p>
             </div>
         </footer>
     );

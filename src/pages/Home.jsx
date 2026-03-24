@@ -134,26 +134,38 @@ const Home = () => {
                             individual entries are now open for all technical and non-technical tracks.
                         </p>
 
-                        <div className="glass" style={{ border: '1px solid var(--primary-green)', padding: '3rem 2rem' }}>
-                            <div className="grid-3" style={{ textAlign: 'left', marginBottom: '3rem', width: '100%' }}>
-                                <div>
-                                    <label style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Schedule</label>
-                                    <h4 style={{ fontSize: '1.4rem' }}>APRIL 8, 2026</h4>
+                        <div className="glass" style={{ border: '1px solid rgba(74, 222, 128, 0.2)', padding: '3.5rem', background: 'rgba(10, 31, 20, 0.6)', borderRadius: '24px', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', position: 'relative', overflow: 'hidden' }}>
+                            {/* Decorative Glow */}
+                            <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '80%', height: '200px', background: 'radial-gradient(ellipse, rgba(74,222,128,0.15) 0%, transparent 70%)', pointerEvents: 'none' }}></div>
+                            
+                            <div className="grid-3" style={{ textAlign: 'center', marginBottom: '2.5rem', width: '100%', gap: '1.5rem', position: 'relative', zIndex: 1 }}>
+                                <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                                    <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Schedule</label>
+                                    <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>APRIL 8, 2026</h4>
                                 </div>
-                                <div>
-                                    <label style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Entry Fee</label>
-                                    <h4 style={{ fontSize: '1.4rem' }}>₹200 / Participant</h4>
-                                    <p>Note : Two Events Per Registration </p>
+                                <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                                    <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Entry Fee</label>
+                                    <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>₹200 <span style={{fontSize: '0.9rem', color: 'var(--text-muted)'}}>/ Head</span></h4>
                                 </div>
-                                <div>
-                                    <label style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase' }}>Prizes</label>
-                                    <h4 style={{ fontSize: '1.4rem' }}>Win Exciting Prizes</h4>
+                                <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                                    <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Rewards</label>
+                                    <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>Exciting Prizes</h4>
                                 </div>
                             </div>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDhRMwjGfE1VF7HsMeHB3ERRvEUVvbJ-oZZdPhjAHNbUt13w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ display: 'inline-block', textDecoration: 'none', background: 'var(--primary-green)', color: 'var(--dark-bg)', padding: '1rem 4rem', borderRadius: '12px', fontWeight: 800, border: 'none', cursor: 'pointer', fontSize: '1rem' }}>
-                                REGISTER NOW
+                            
+                            <div style={{ background: 'rgba(74, 222, 128, 0.1)', borderLeft: '4px solid var(--primary-green)', padding: '1.8rem', textAlign: 'left', marginBottom: '3rem', borderRadius: '0 12px 12px 0', position: 'relative', zIndex: 1 }}>
+                                <h5 style={{ color: 'var(--primary-green)', marginBottom: '0.8rem', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                                    <ShieldCheck size={20} /> Important Guidelines
+                                </h5>
+                                <ul style={{ color: 'var(--text-main)', fontSize: '1rem', margin: 0, paddingLeft: '1.5rem', lineHeight: '1.8' }}>
+                                    <li>Participants can register for a maximum of <strong>two events</strong> per entry fee.</li>
+                                    <li>Upon successful payment and registration, you <strong>must send the payment screenshot</strong> to <a href="https://wa.me/917200347033" target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary-green)', textDecoration: 'underline'}}>+91 7200347033</a> on WhatsApp for confirmation.</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDhRMwjGfE1VF7HsMeHB3ERRvEUVvbJ-oZZdPhjAHNbUt13w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-hover-glow" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.8rem', textDecoration: 'none', background: 'var(--primary-green)', color: '#050f0a', padding: '1.2rem 4rem', borderRadius: '14px', fontWeight: 900, border: 'none', cursor: 'pointer', fontSize: '1.1rem', transition: 'all 0.3s', boxShadow: '0 10px 30px rgba(74, 222, 128, 0.3)', position: 'relative', zIndex: 1 }}>
+                                PROCEED TO REGISTER <ArrowRight size={20} />
                             </a>
-                            <p>Note : After Registration Send Your Screenshot to the +91 7200347033</p>
                         </div>
                     </div>
                 </div>

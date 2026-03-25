@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
 
                 <div style={{ textAlign: 'center', color: 'var(--text-dim)', opacity: 0.9, fontSize: '0.95rem', marginBottom: '2rem' }}>
-                    <p style={{ marginBottom: '0.3rem' }}>Organised by Department of Agriculture Engineering</p>
+                    <p style={{ marginBottom: '0.3rem' }}>Organised by Department of Agricultural Engineering</p>
                     <p style={{ fontWeight: 800, color: '#fff' }}>Suguna College of Engineering</p>
                 </div>
 

@@ -22,7 +22,7 @@ const NonTechnicalEvents = () => {
         {
             title: "Start Music",
             icon: <Music size={24} />,
-            desc: "Start Music is a fun musical event where participants showcase their singing or musical talent. Individuals or teams can perform songs or musical pieces in their preferred style. The event celebrates creativity, rhythm, and musical expression.",
+            desc: "In this fun musical event, a tune or music clip will be played, and participants must identify or continue the correct lyrics of the song. This event tests music knowledge, listening skills, and quick response.",
             poster: musicPoster,
             color: "#f59e0b"
         },
@@ -36,14 +36,14 @@ const NonTechnicalEvents = () => {
         {
             title: "Reels Making",
             icon: <Video size={24} />,
-            desc: "The Reels Making event challenges participants to create short, creative, and engaging video reels. Participants can showcase storytelling, editing skills, humor, or creative ideas through short videos. The best reels will be judged based on creativity, originality, and presentation.",
+            desc: "An action-packed gaming event where participants compete in Free Fire. This event tests gaming skills, strategy, teamwork, quick decision-making, and coordination under pressure.",
             poster: reelsPoster,
             color: "#fbbf24"
         },
         {
             title: "Bioscope",
             icon: <Camera size={24} />,
-            desc: "Bioscope is an entertaining event where participants present short films, visual stories, or creative video content. Teams can showcase their storytelling skills through creative videos, documentaries, or mini films. The event highlights creativity, imagination, and visual communication.",
+            desc: "In this interesting visual event, a set of pictures will be shown to the participants, and they must identify the common connection between them. This event tests observation skills, logical thinking, and creativity.",
             poster: bioscopePoster,
             color: "#fde68a"
         }

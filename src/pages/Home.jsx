@@ -56,9 +56,10 @@ const Home = () => {
                             <span className="badge">Our Vision</span>
                             <h2 className="grad-text" style={{ margin: '1rem 0' }}>Farming the Future</h2>
                             <p className="desc-lg" style={{ color: 'var(--text-dim)', marginBottom: '2rem' }}>
-                                ZENZORA 2K26 is where traditional farming meets modern engineering.
-                                We explore AI crop monitoring, smart irrigation, and robotic harvesting
-                                to build a sustainable world.
+                            ZENZORA 2K26 is an innovative symposium by the Agriculture Department where farming meets modern technology 🌱🤖.
+It highlights AI-based crop monitoring, smart irrigation, and advanced agricultural solutions.
+The event encourages students to explore new ideas that improve productivity and sustainability.
+ZENZORA 2K26 aims to inspire future innovators to build smarter agriculture for tomorrow. 🚜✨
                             </p>
                             <div style={{ display: 'flex', gap: '2rem' }}>
                                 <div>
@@ -89,7 +90,7 @@ const Home = () => {
                     <div style={{ textAlign: 'center', marginBottom: '3rem' }} className="reveal">
                         <span className="badge">Main Arena</span>
                         <h2 style={{ margin: '1rem 0' }}>Symposium Tracks</h2>
-                        <p className="desc-lg" style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>Choose your path and showcase your engineering prowess.</p>
+                        <p className="desc-lg" style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>Choose your path and showcase your engineering powers.</p>
                     </div>
 
                     <div className="grid-2" style={{ gap: '2rem' }}>
@@ -130,8 +131,8 @@ const Home = () => {
                         <span className="badge">Registration Hub</span>
                         <h2 className="grad-text" style={{ margin: '1rem 0' }}>Seed Your Success</h2>
                         <p className="desc-lg" style={{ color: 'var(--text-dim)', marginBottom: '3rem' }}>
-                            Ready to join the agricultural revolution? Group registrations and
-                            individual entries are now open for all technical and non-technical tracks.
+                            Ready to join the agricultural revolution? 
+                            Individual entries are now open for all technical and non-technical tracks.
                         </p>
 
                         <div className="glass" style={{ border: '1px solid rgba(74, 222, 128, 0.2)', padding: '3.5rem', background: 'rgba(10, 31, 20, 0.6)', borderRadius: '24px', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', position: 'relative', overflow: 'hidden' }}>
@@ -145,7 +146,7 @@ const Home = () => {
                                 </div>
                                 <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
                                     <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Entry Fee</label>
-                                    <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>₹200 <span style={{fontSize: '0.9rem', color: 'var(--text-muted)'}}>/ Head</span></h4>
+                                    <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>₹200 <span style={{fontSize: '0.9rem', color: 'var(--text-muted)'}}>/ Per Person</span></h4>
                                 </div>
                                 <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
                                     <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Rewards</label>
@@ -159,7 +160,7 @@ const Home = () => {
                                 </h5>
                                 <ul style={{ color: 'var(--text-main)', fontSize: '1rem', margin: 0, paddingLeft: '1.5rem', lineHeight: '1.8' }}>
                                     <li>Participants can register for a maximum of <strong>two events</strong> per entry fee.</li>
-                                    <li>Upon successful payment and registration, you <strong>must send the payment screenshot</strong> to <a href="https://wa.me/917200347033" target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary-green)', textDecoration: 'underline'}}>+91 7200347033</a> on WhatsApp for confirmation.</li>
+                                    
                                 </ul>
                             </div>
 
@@ -207,7 +208,7 @@ const Home = () => {
                                 <MapPin size={24} />
                             </div>
                             <h4 style={{ marginBottom: '0.5rem' }}>Location</h4>
-                            <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary-green)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-main)'}>SCE, Coimbatore, TN</p>
+                            <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', transition: 'color 0.3s' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--primary-green)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-main)'}>Suguna College of Engineering, Coimbatore, Tamil Nadu</p>
                         </div>
                     </div>
                 </div>

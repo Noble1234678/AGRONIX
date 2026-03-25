@@ -14,28 +14,28 @@ const TechnicalEvents = () => {
         {
             title: "Poster Presentation",
             icon: <Monitor size={24} />,
-            desc: "The Poster Presentation event allows participants to present innovative ideas, research findings, or technical solutions related to agriculture and technology through creative posters. Teams will visually explain their concepts, methodology, and outcomes to judges and participants. The event encourages creativity, research thinking, and effective communication of technical knowledge",
+            desc: "Participants prepare and present an attractive poster based on the given topic. The poster should clearly explain the idea using images, charts, and short points. This event tests creativity, clarity, and presentation skills.",
             poster: posterPresentation,
             color: "#4ade80"
         },
         {
             title: "Paper Presentation",
             icon: <BookOpen size={24} />,
-            desc: "The Paper Presentation event provides a platform for students to present research papers on emerging topics in agriculture, technology, and innovation. Participants will explain their research, findings, and solutions to real-world agricultural challenges. The event helps students develop research skills, analytical thinking, and professional presentation abilities.",
+            desc: "Participants present their ideas, research, or innovative concepts related to the given topic in front of the judges. It is a great opportunity to share knowledge, improve presentation skills, and show creativity in explaining the subject.",
             poster: paperPresentation,
             color: "#22c55e"
         },
         {
             title: "Tech Talk",
             icon: <Mic size={24} />,
-            desc: "Tech Talk is an interactive session where participants share knowledge, ideas, or innovations related to modern technology and agriculture. Students can present emerging technologies, future trends, or innovative solutions in a short and engaging talk. This event encourages knowledge sharing, confidence, and communication skills",
+            desc: "Participants deliver a short and interesting speech on a technical or informative topic. This event helps students express their ideas confidently, improve communication skills, and share useful knowledge with the audience.",
             poster: techTalk,
             color: "#86efac"
         },
         {
             title: "Wisdom War",
             icon: <Lightbulb size={24} />,
-            desc: "Wisdom War is a technical quiz competition organized by the Agriculture Department to test and enhance students’ knowledge in agricultural science, technology, and innovations. The event encourages participants to explore topics such as crop production, soil science, agricultural engineering, modern farming technologies, and sustainable agriculture while competing in an engaging and challenging quiz format.",
+            desc: "A fun and exciting quiz competition that tests participants’ knowledge, thinking speed, and teamwork. Questions may be based on academics, current affairs, general knowledge, and technical topics.",
             poster: wisdomWar,
             color: "#34d399"
         }

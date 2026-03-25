@@ -7,7 +7,7 @@ import bgEvents from '../assets/bg3.jpg';
 import posterPresentation from '../assets/posters/poster_presentation.png';
 import paperPresentation from '../assets/posters/paper_presentation.png';
 import techTalk from '../assets/posters/tech_talk.png';
-import wisdomWar from '../assets/posters/wisdomWar.png'
+import wisdomWar from '../assets/posters/wisdomwar.png'
 
 const TechnicalEvents = () => {
     const events = [

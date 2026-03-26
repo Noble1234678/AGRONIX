@@ -32,10 +32,10 @@ const Home = () => {
                         ZENZORA
                     </h1>
                     <h2 className="hero-subtitle-animated" style={{ fontSize: 'clamp(1rem, 3vw, 1.8rem)', marginBottom: '1.5rem', letterSpacing: '2px', textTransform: 'uppercase' }}>
-                        A NATIONAL LEVEL INTER-COLLEGE SYMPOSIUM
+                        A SYMPOSIUM EVENT
                     </h2>
                     <p className="animate-arise delay-4 desc-lg" style={{ color: 'var(--text-main)', maxWidth: '800px', margin: '0 auto 2.5rem', fontSize: '1.1rem', letterSpacing: '1px' }}>
-                        <strong className="glow-date" style={{ fontSize: '1.3rem' }}>April 08, 2K26</strong><br />
+                        <strong className="glow-date" style={{ fontSize: '1.3rem' }}>April 08, 2026</strong><br />
                         <span style={{ color: 'var(--text-dim)', marginTop: '0.5rem', display: 'block' }}>VENUE: SUGUNA COLLEGE OF ENGINEERING, COIMBATORE</span>
                     </p>
                     <div className="animate-arise delay-5" style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
@@ -56,7 +56,7 @@ const Home = () => {
                             <span className="badge">Our Vision</span>
                             <h2 className="grad-text" style={{ margin: '1rem 0' }}>Farming the Future</h2>
                             <p className="desc-lg" style={{ color: 'var(--text-dim)', marginBottom: '2rem' }}>
-                            ZENZORA 2K26 is an innovative symposium by the Agriculture Department where farming meets modern technology 🌱🤖.
+                            ZENZORA 2K26 is an innovative symposium by the Agriculture Department where Agriculture meets modern technology 🌱🤖.
 It highlights AI-based crop monitoring, smart irrigation, and advanced agricultural solutions.
 The event encourages students to explore new ideas that improve productivity and sustainability.
 ZENZORA 2K26 aims to inspire future innovators to build smarter agriculture for tomorrow. 🚜✨

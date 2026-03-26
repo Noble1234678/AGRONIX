@@ -12,13 +12,7 @@ import bioscopePoster from '../assets/posters/bioscope.png';
 
 const NonTechnicalEvents = () => {
     const events = [
-        {
-            title: "Dancing (Solo / Group)",
-            icon: <Stars size={24} />,
-            desc: "The Dancing event gives participants an opportunity to showcase their talent, creativity, and passion for dance. Participants can perform individually or as a group in any dance style. This event adds energy and entertainment to the symposium while encouraging artistic expression.",
-            poster: dancingPoster,
-            color: "#fbbf24"
-        },
+
         {
             title: "Start Music",
             icon: <Music size={24} />,

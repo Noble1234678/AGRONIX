@@ -56,10 +56,10 @@ const Home = () => {
                             <span className="badge">Our Vision</span>
                             <h2 className="grad-text" style={{ margin: '1rem 0' }}>Farming the Future</h2>
                             <p className="desc-lg" style={{ color: 'var(--text-dim)', marginBottom: '2rem' }}>
-                            ZENZORA 2K26 is an innovative symposium by the Agriculture Department where Agriculture meets modern technology 🌱🤖.
+                            ZENZORA 2026 is an innovative symposium by the Agriculture Department where Agriculture meets modern technology 🌱🤖.
 It highlights AI-based crop monitoring, smart irrigation, and advanced agricultural solutions.
 The event encourages students to explore new ideas that improve productivity and sustainability.
-ZENZORA 2K26 aims to inspire future innovators to build smarter agriculture for tomorrow. 🚜✨
+ZENZORA 2026 aims to inspire future innovators to build smarter agriculture for tomorrow. 🚜✨
                             </p>
                             <div style={{ display: 'flex', gap: '2rem' }}>
                                 <div>

@@ -13,7 +13,7 @@ import tech from "../assets/tech.png"
 
 const Home = () => {
     return (
-        <div>
+        <div style={{ overflowX: 'hidden', width: '100%' }}>
             {/* 1. HOME SECTION - background.jpg */}
             <section id="home" className="section hero" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden', width: '100%' }}>
                 <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
@@ -40,14 +40,14 @@ const Home = () => {
                     </p>
                     <div className="animate-arise delay-5" style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
                         <a href="#events" className="btn btn-primary" style={{ background: 'var(--primary-green)', color: 'var(--dark-bg)', padding: '0.8rem 2.5rem', borderRadius: '12px', fontWeight: 800, textDecoration: 'none', fontSize: '0.9rem', transition: 'var(--transition)' }}>DISCOVER EVENTS</a>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDhRMwjGfE1VF7HsMeHB3ERRvEUVvbJ-oZZdPhjAHNbUt13w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer"  className="btn" style={{ border: '2px solid var(--primary-green)', color: 'var(--primary-green)', padding: '0.8rem 2.5rem', borderRadius: '12px', fontWeight: 800, textDecoration: 'none', fontSize: '0.9rem', transition: 'var(--transition)' }}>GET REGISTERED</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDhRMwjGfE1VF7HsMeHB3ERRvEUVvbJ-oZZdPhjAHNbUt13w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn" style={{ border: '2px solid var(--primary-green)', color: 'var(--primary-green)', padding: '0.8rem 2.5rem', borderRadius: '12px', fontWeight: 800, textDecoration: 'none', fontSize: '0.9rem', transition: 'var(--transition)' }}>GET REGISTERED</a>
                     </div>
                 </div>
             </section>
 
             {/* 2. ABOUT SECTION - bg2.jpg */}
             <section id="about" className="section">
-                <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.15 }}>
+                <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.15, overflow: 'hidden' }}>
                     <img src={bgAbout} alt="About Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="container">
@@ -56,10 +56,10 @@ const Home = () => {
                             <span className="badge">Our Vision</span>
                             <h2 className="grad-text" style={{ margin: '1rem 0' }}>Farming the Future</h2>
                             <p className="desc-lg" style={{ color: 'var(--text-dim)', marginBottom: '2rem' }}>
-                            ZENZORA 2026 is an innovative symposium by the Agriculture Department where Agriculture meets modern technology 🌱🤖.
-It highlights AI-based crop monitoring, smart irrigation, and advanced agricultural solutions.
-The event encourages students to explore new ideas that improve productivity and sustainability.
-ZENZORA 2026 aims to inspire future innovators to build smarter agriculture for tomorrow. 🚜✨
+                                ZENZORA 2026 is an innovative symposium by the Agriculture Department where Agriculture meets modern technology 🌱🤖.
+                                It highlights AI-based crop monitoring, smart irrigation, and advanced agricultural solutions.
+                                The event encourages students to explore new ideas that improve productivity and sustainability.
+                                ZENZORA 2026 aims to inspire future innovators to build smarter agriculture for tomorrow. 🚜✨
                             </p>
                             <div style={{ display: 'flex', gap: '2rem' }}>
                                 <div>
@@ -83,7 +83,7 @@ ZENZORA 2026 aims to inspire future innovators to build smarter agriculture for 
 
             {/* 3. EVENTS SECTION - bg3.jpg */}
             <section id="events" className="section" style={{ background: 'var(--dark-surface)' }}>
-                <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.1 }}>
+                <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.1, overflow: 'hidden' }}>
                     <img src={bgEvents} alt="Events Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="container">
@@ -123,7 +123,7 @@ ZENZORA 2026 aims to inspire future innovators to build smarter agriculture for 
 
             {/* 4. REGISTER SECTION - bg4.jpg */}
             <section id="register" className="section">
-                <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.15 }}>
+                <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.15, overflow: 'hidden' }}>
                     <img src={bgRegister} alt="Register Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="container">
@@ -131,14 +131,14 @@ ZENZORA 2026 aims to inspire future innovators to build smarter agriculture for 
                         <span className="badge">Registration Hub</span>
                         <h2 className="grad-text" style={{ margin: '1rem 0' }}>Seed Your Success</h2>
                         <p className="desc-lg" style={{ color: 'var(--text-dim)', marginBottom: '3rem' }}>
-                            Ready to join the agricultural revolution? 
+                            Ready to join the agricultural revolution?
                             Individual entries are now open for all technical and non-technical tracks.
                         </p>
 
                         <div className="glass" style={{ border: '1px solid rgba(74, 222, 128, 0.2)', padding: '3.5rem', background: 'rgba(10, 31, 20, 0.6)', borderRadius: '24px', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', position: 'relative', overflow: 'hidden' }}>
                             {/* Decorative Glow */}
                             <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '80%', height: '200px', background: 'radial-gradient(ellipse, rgba(74,222,128,0.15) 0%, transparent 70%)', pointerEvents: 'none' }}></div>
-                            
+
                             <div className="grid-3" style={{ textAlign: 'center', marginBottom: '2.5rem', width: '100%', gap: '1.5rem', position: 'relative', zIndex: 1 }}>
                                 <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
                                     <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Schedule</label>
@@ -146,21 +146,21 @@ ZENZORA 2026 aims to inspire future innovators to build smarter agriculture for 
                                 </div>
                                 <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
                                     <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Entry Fee</label>
-                                    <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>₹200 <span style={{fontSize: '0.9rem', color: 'var(--text-muted)'}}>/ Per Person</span></h4>
+                                    <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>₹200 <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>/ Per Person</span></h4>
                                 </div>
                                 <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
                                     <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Rewards</label>
                                     <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>Exciting Prizes</h4>
                                 </div>
                             </div>
-                            
+
                             <div style={{ background: 'rgba(74, 222, 128, 0.1)', borderLeft: '4px solid var(--primary-green)', padding: '1.8rem', textAlign: 'left', marginBottom: '3rem', borderRadius: '0 12px 12px 0', position: 'relative', zIndex: 1 }}>
                                 <h5 style={{ color: 'var(--primary-green)', marginBottom: '0.8rem', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                                     <ShieldCheck size={20} /> Important Guidelines
                                 </h5>
                                 <ul style={{ color: 'var(--text-main)', fontSize: '1rem', margin: 0, paddingLeft: '1.5rem', lineHeight: '1.8' }}>
                                     <li>Participants can register for a maximum of <strong>two events</strong> per entry fee.</li>
-                                    
+
                                 </ul>
                             </div>
 
@@ -174,7 +174,7 @@ ZENZORA 2026 aims to inspire future innovators to build smarter agriculture for 
 
             {/* 5. CONTACT SECTION - bg5.png */}
             <section id="contact" className="section" style={{ background: 'var(--dark-surface)' }}>
-                <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.1 }}>
+                <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.1, overflow: 'hidden' }}>
                     <img src={bgContact} alt="Contact Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="container">

@@ -12,9 +12,9 @@ import wisdomWar from '../assets/posters/wisdomwar.png'
 const TechnicalEvents = () => {
     const events = [
         {
-            title: "Poster Presentation",
+            title: "E-Poster Presentation",
             icon: <Monitor size={24} />,
-            desc: "Participants prepare and present an attractive poster based on the given topic. The poster should clearly explain the idea using images, charts, and short points. This event tests creativity, clarity, and presentation skills.",
+            desc: "Participants prepare and present an attractive e-poster based on the given topic. The e-poster should clearly explain the idea using images, charts, and short points. This event tests creativity, clarity, and presentation skills.",
             poster: posterPresentation,
             color: "#4ade80"
         },
@@ -43,7 +43,6 @@ const TechnicalEvents = () => {
 
     return (
         <div style={{ minHeight: '100vh', background: 'var(--dark-bg)', position: 'relative', overflow: 'hidden' }}>
-            {/* Background Lines Animation */}
             <div className="moving-line" style={{ top: '20%', opacity: 0.1 }}></div>
             <div className="moving-line" style={{ top: '60%', opacity: 0.1, animationDelay: '-3s' }}></div>
 

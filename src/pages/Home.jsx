@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Monitor, Music, ShieldCheck, Plane, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowRight, Monitor, Music, ShieldCheck, Plane, Mail, MapPin, Phone, Leaf, Droplet, Navigation, Smartphone, Globe, Cpu, Zap, Recycle } from 'lucide-react';
 import PlantGrowth from '../components/PlantGrowth';
 
 // Assets
@@ -10,6 +10,18 @@ import bgEvents from '../assets/bg3.jpg';
 import bgRegister from '../assets/bg4.jpg';
 import bgContact from '../assets/bg5.png';
 import tech from "../assets/tech.png"
+import topics from "../assets/bg6.png"
+
+const presentationTopics = [
+    { title: "Climate Smart Agriculture Technologies", icon: <Leaf size={24} /> },
+    { title: "IoT Based Smart Irrigation System", icon: <Droplet size={24} /> },
+    { title: "Drone Applications in Agriculture", icon: <Navigation size={24} /> },
+    { title: "Mobile Apps for Farmers", icon: <Smartphone size={24} /> },
+    { title: "GIS and Remote Sensing for Climate Monitoring", icon: <Globe size={24} /> },
+    { title: "Agricultural Robotics", icon: <Cpu size={24} /> },
+    { title: "Renewable Energy Powered Farm Equipment", icon: <Zap size={24} /> },
+    { title: "Waste to Energy Technologies", icon: <Recycle size={24} /> }
+];
 
 const Home = () => {
     return (
@@ -117,6 +129,105 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* TOPICS SECTION */}
+            <section id="topics" className="section" style={{ position: 'relative', overflow: 'hidden', background: 'var(--dark-surface)' }}>
+                {/* Responsive Background image suitable for above section */}
+                <div style={{ position: 'absolute', inset: 0, zIndex: 0, opacity: 0.15, overflow: 'hidden' }}>
+                    <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '100%', height: '100%', background: 'radial-gradient(circle at top, rgba(74, 222, 128, 0.2) 0%, transparent 70%)', pointerEvents: 'none' }}></div>
+                    <img src={topics} alt="Topics Background" className="parallax-bg" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.6)' }} />
+                </div>
+
+                <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+                    <div className="reveal" style={{ textAlign: 'center', marginBottom: '4rem' }}>
+                        <span className="badge">Knowledge Hub</span>
+                        <h2 className="grad-text" style={{ margin: '1rem 0' }}>Presentation Topics</h2>
+                        <p className="desc-lg" style={{ color: 'var(--text-dim)', maxWidth: '700px', margin: '0 auto' }}>
+                            Explore our curated list of topics for your presentations and papers. Choose a domain that sparks your innovation.
+                        </p>
+                    </div>
+
+                    <div style={{ 
+                        display: 'grid', 
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+                        gap: '2rem' 
+                    }}>
+                        {presentationTopics.map((topic, index) => (
+                            <div key={index} className="reveal product-card" style={{ 
+                                padding: '2.5rem 1.5rem', 
+                                display: 'flex', 
+                                flexDirection: 'column',
+                                alignItems: 'center', 
+                                textAlign: 'center',
+                                gap: '1.2rem', 
+                                borderRadius: '20px',
+                                background: 'linear-gradient(145deg, rgba(15, 30, 20, 0.8), rgba(5, 10, 5, 0.9))',
+                                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+                                border: '1px solid rgba(74, 222, 128, 0.05)',
+                                borderTop: '2px solid rgba(74, 222, 128, 0.4)',
+                                transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                cursor: 'default'
+                            }}
+                            onMouseEnter={e => {
+                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(74, 222, 128, 0.15)';
+                                e.currentTarget.style.borderColor = 'rgba(74, 222, 128, 0.2)';
+                                e.currentTarget.style.borderTopColor = 'var(--primary-green)';
+                                const iconWrap = e.currentTarget.querySelector('.icon-wrapper');
+                                if (iconWrap) {
+                                    iconWrap.style.transform = 'scale(1.1) rotate(5deg)';
+                                    iconWrap.style.background = 'var(--primary-green)';
+                                    iconWrap.style.color = '#050f0a';
+                                    iconWrap.style.boxShadow = '0 0 20px rgba(74, 222, 128, 0.4)';
+                                }
+                            }}
+                            onMouseLeave={e => {
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3)';
+                                e.currentTarget.style.borderColor = 'rgba(74, 222, 128, 0.05)';
+                                e.currentTarget.style.borderTopColor = 'rgba(74, 222, 128, 0.4)';
+                                const iconWrap = e.currentTarget.querySelector('.icon-wrapper');
+                                if (iconWrap) {
+                                    iconWrap.style.transform = 'scale(1) rotate(0deg)';
+                                    iconWrap.style.background = 'rgba(74, 222, 128, 0.1)';
+                                    iconWrap.style.color = 'var(--primary-green)';
+                                    iconWrap.style.boxShadow = 'inset 0 0 20px rgba(74, 222, 128, 0.1)';
+                                }
+                            }}>
+                                <div className="icon-wrapper" style={{ 
+                                    background: 'rgba(74, 222, 128, 0.1)', 
+                                    color: 'var(--primary-green)', 
+                                    width: '70px',
+                                    height: '70px',
+                                    borderRadius: '50%',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    transition: 'all 0.4s ease',
+                                    boxShadow: 'inset 0 0 20px rgba(74, 222, 128, 0.1)',
+                                    marginBottom: '0.5rem'
+                                }}>
+                                    {topic.icon}
+                                </div>
+                                <div style={{ width: '100%' }}>
+                                    <h4 style={{ 
+                                        fontSize: '1.2rem', 
+                                        margin: '0 0 1rem 0', 
+                                        lineHeight: 1.4, 
+                                        color: '#ffffff',
+                                        fontWeight: 700
+                                    }}>
+                                        {topic.title}
+                                    </h4>
+                                    <div style={{ width: '40px', height: '3px', background: 'var(--primary-green)', margin: '0 auto', borderRadius: '2px', opacity: 0.5 }}></div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

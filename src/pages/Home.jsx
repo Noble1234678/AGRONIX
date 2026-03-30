@@ -11,6 +11,7 @@ import bgRegister from '../assets/bg4.jpg';
 import bgContact from '../assets/bg5.png';
 import tech from "../assets/tech.png"
 import topics from "../assets/bg6.png"
+import collegeLogo from "../assets/college-logo.png"
 
 const presentationTopics = [
     { title: "Climate Smart Agriculture Technologies", icon: <Leaf size={24} /> },
@@ -34,6 +35,23 @@ const Home = () => {
                 </div>
 
                 <div className="container" style={{ textAlign: 'center', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                    <div className="animate-arise" style={{ marginBottom: '2rem', marginTop: '2rem' }}>
+                        <a href="https://sugunace.com" target="_blank" rel="noopener noreferrer">
+                            <img 
+                                src={collegeLogo} 
+                                alt="Suguna College of Engineering" 
+                                style={{ 
+                                    height: 'auto', 
+                                    maxHeight: '120px', 
+                                    objectFit: 'contain', 
+                                    filter: 'drop-shadow(0 0 15px rgba(255, 255, 255, 0.3))', 
+                                    transition: 'transform 0.3s ease' 
+                                }} 
+                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'} 
+                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'} 
+                            />
+                        </a>
+                    </div>
                     <span className="badge animate-arise" style={{ marginBottom: '1.5rem', display: 'inline-block', fontSize: '0.9rem', letterSpacing: '2px', boxShadow: '0 0 15px rgba(74, 222, 128, 0.3)' }}>
                         DEPARTMENT OF Agricultural Engineering
                     </span>

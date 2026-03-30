@@ -154,7 +154,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="mobile-menu-footer">
-                        <p>© 2026 AGRONIX SYMPOSIUM</p>
+                        <p>© 2026 ZENZORA SYMPOSIUM</p>
                         <div className="footer-dots">
                             <span></span><span></span><span></span>
                         </div>

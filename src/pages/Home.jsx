@@ -44,11 +44,17 @@ const Home = () => {
                                     height: 'auto', 
                                     maxHeight: '120px', 
                                     objectFit: 'contain', 
-                                    filter: 'drop-shadow(0 0 15px rgba(255, 255, 255, 0.3))', 
-                                    transition: 'transform 0.3s ease' 
+                                    filter: 'brightness(0.8) drop-shadow(0 0 15px rgba(255, 255, 255, 0.3))', 
+                                    transition: 'all 0.3s ease' 
                                 }} 
-                                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'} 
-                                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'} 
+                                onMouseEnter={e => {
+                                    e.currentTarget.style.transform = 'scale(1.05)';
+                                    e.currentTarget.style.filter = 'brightness(0.95) drop-shadow(0 0 15px rgba(255, 255, 255, 0.5))';
+                                }} 
+                                onMouseLeave={e => {
+                                    e.currentTarget.style.transform = 'scale(1)';
+                                    e.currentTarget.style.filter = 'brightness(0.8) drop-shadow(0 0 15px rgba(255, 255, 255, 0.3))';
+                                }} 
                             />
                         </a>
                     </div>

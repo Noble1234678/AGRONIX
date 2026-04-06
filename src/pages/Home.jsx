@@ -71,7 +71,7 @@ const Home = () => {
                         A SYMPOSIUM EVENT
                     </h2>
                     <p className="animate-arise delay-4 desc-lg" style={{ color: 'var(--text-main)', maxWidth: '800px', margin: '0 auto 2.5rem', fontSize: '1.1rem', letterSpacing: '1px' }}>
-                        <strong className="glow-date" style={{ fontSize: '1.3rem' }}>April 08, 2026</strong><br />
+                        <strong className="glow-date" style={{ fontSize: '1.3rem' }}>April 16, 2026</strong><br />
                         <span style={{ color: 'var(--text-dim)', marginTop: '0.5rem', display: 'block' }}>VENUE: SUGUNA COLLEGE OF ENGINEERING, COIMBATORE</span>
                     </p>
                     <div className="animate-arise delay-5" style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
@@ -279,7 +279,7 @@ const Home = () => {
                             <div className="grid-3" style={{ textAlign: 'center', marginBottom: '2.5rem', width: '100%', gap: '1.5rem', position: 'relative', zIndex: 1 }}>
                                 <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
                                     <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Schedule</label>
-                                    <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>APRIL 8, 2026</h4>
+                                    <h4 style={{ fontSize: '1.5rem', marginTop: '0.5rem', fontWeight: 900 }}>APRIL 16, 2026</h4>
                                 </div>
                                 <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
                                     <label style={{ color: 'var(--primary-green)', fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px' }}>Entry Fee</label>
